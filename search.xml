@@ -27,6 +27,31 @@
     </entry>
     
     
+    
+    <entry>
+      <title>test</title>
+      <link href="/posts/2.html"/>
+      <url>/posts/2.html</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>溜溜球啦！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 想法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
