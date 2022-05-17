@@ -5,6 +5,31 @@
     
     <entry>
       <title>953. 验证外星语词典</title>
+      <link href="/posts/4.html"/>
+      <url>/posts/4.html</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-QUESTION" data-language="QUESTION"><code class="language-QUESTION">剑指 Offer II 114. 外星文字典现有一种使用英语字母的外星文语言，这门语言的字母顺序与英语顺序不同。给定一个字符串列表 words ，作为这门语言的词典，words 中的字符串已经 按这门新语言的字母顺序进行了排序 。请你根据该词典还原出此语言中已知的字母顺序，并 按字母递增顺序 排列。若不存在合法字母顺序，返回 "" 。若存在多种可能的合法字母顺序，返回其中 任意一种 顺序即可。字符串 s 字典顺序小于 字符串 t 有两种情况：在第一个不同字母处，如果 s 中的字母在这门外星语言的字母顺序中位于 t 中字母之前，那么 s 的字典顺序小于 t 。如果前面 min(s.length, t.length) 字母都相同，那么 s.length &lt; t.length 时，s 的字典顺序也小于 t 。 示例 1：输入：words = ["wrt","wrf","er","ett","rftt"]输出："wertf"示例 2：输入：words = ["z","x"]输出："zx"示例 3：输入：words = ["z","x","z"]输出：""解释：不存在合法字母顺序，因此返回 "" 。 提示：1 &lt;= words.length &lt;= 1001 &lt;= words[i].length &lt;= 100words[i] 仅由小写英文字母组成 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h5><p>通过观察，知道字符与字符之间要么有先序的依赖关系，要么不能推出联系，也就是没有先序关系。可以使用拓扑排序对入度为0的字符优先入队，然后再相应把邻接点的入度–，一旦发现有入度为0的还没访问的点就进行入队。</p><h5 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Solution {public:    string alienOrder(vector&lt;string&gt;&amp; words) {           int n=words.size();           vector&lt;bool&gt;vis(26);           for(string &amp;word:words){               for(char &amp;ch:word){                   vis[ch-'a']=1;               }           }           vector&lt;vector&lt;int&gt;&gt;mp(26);           vector&lt;int&gt;degree(26);           for(int i=0;i&lt;n-1;i++){               string &amp;s1=words[i],&amp;s2=words[i+1];               if(s1.size()&gt;s2.size()&amp;&amp;!s1.find(s2)){                   return "";               }               int mn=min(s1.size(),s2.size());               for(int j=0;j&lt;mn;j++){                   if(s1[j]==s2[j])continue;                   mp[s1[j]-'a'].push_back(s2[j]-'a');                   degree[s2[j]-'a']++;                   break;               }           }           queue&lt;int&gt;q;           int tot=count_if(vis.begin(),vis.end(),[&amp;](int i){return i;});           cout&lt;&lt;tot&lt;&lt;endl;           for(int i=0;i&lt;26;i++){               if(vis[i]&amp;&amp;degree[i]==0){                   q.push(i);               }           }           string res;           vector&lt;bool&gt;hs(26);           while(!q.empty()){                 int sz=q.size();                 for(int i=0;i&lt;sz;i++){                     int x=q.front();                    q.pop();                     res.push_back(char(x+'a'));                     hs[x]=1;                     for(int xx:mp[x]){                         if(!--degree[xx]&amp;&amp;!hs[xx]){                             q.push(xx);                         }                     }                 }           }           return res.size()==tot?res:"";    }};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 拓扑排序 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>953. 验证外星语词典</title>
       <link href="/posts/3.html"/>
       <url>/posts/3.html</url>
       
