@@ -6,7 +6,7 @@
   <link href="https://zm2954237695.github.io/atom.xml" rel="self"/>
   
   <link href="https://zm2954237695.github.io/"/>
-  <updated>2022-05-17T02:53:20.063Z</updated>
+  <updated>2022-05-17T07:49:33.346Z</updated>
   <id>https://zm2954237695.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>索引</title>
+    <link href="https://zm2954237695.github.io/posts/5.html"/>
+    <id>https://zm2954237695.github.io/posts/5.html</id>
+    <published>2022-05-17T07:32:00.000Z</published>
+    <updated>2022-05-17T07:49:33.346Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="索引的意义"><a href="#索引的意义" class="headerlink" title="索引的意义"></a>索引的意义</h5><p>索引本质是一种排序好的数据结构，是一种帮助Mysql高效获取数据的数据结构，有效提高查询效率。Mysql底层一般是采用B+树实现。</p><h5 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h5><p>1.<strong>普通索引indeix</strong>：加速查找</p><p>2.<strong>唯一索引</strong></p><p>​        主键索引：primary key：加速查找+约束（不为空且唯一）         唯一索引：unique：加速查找+约束（唯一）</p><p>3.<strong>联合索引</strong></p><p>  primary key(id,name)：联合主键索引            unique(id,name)：联合唯一索引         </p><p>index(id,name)：联合普通索引</p><p>4.<strong>全文索引 fulltext</strong>：用于搜索很长的一篇文章的时候，效果最好</p><p>5.<strong>空间索引 spatial</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h5 id=&quot;索引的意义&quot;&gt;&lt;a href=&quot;#索引的意义&quot; class=&quot;headerlink&quot; title=&quot;索引的意义&quot;&gt;&lt;/a&gt;索引的意义&lt;/h5&gt;&lt;p&gt;索引本质是一种排序好的数据结构，是一种帮助Mysql高效获取数据的数据结构，有效提高查询效率。Mysql底层一般是采</summary>
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://zm2954237695.github.io/categories/MySQL/"/>
+    
+    
+    <category term="八股文" scheme="https://zm2954237695.github.io/tags/%E5%85%AB%E8%82%A1%E6%96%87/"/>
+    
+  </entry>
   
   <entry>
     <title>剑指Ⅱ. 外星文字典</title>
