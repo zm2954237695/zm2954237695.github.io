@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>953. 验证外星语词典</title>
+      <link href="/posts/3.html"/>
+      <url>/posts/3.html</url>
+      
+        <content type="html"><![CDATA[<h5 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h5><p>按照题意，对words两两进行比较，发现不符合直接返回false即可</p><h5 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h5><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Solution {public:    bool isAlienSorted(vector&lt;string&gt;&amp; words, string order) {         int n=words.size();         vector&lt;int&gt;pos(26);         for(int i=0;i&lt;26;i++){             pos[order[i]-'a']=i;         }         for(int i=0;i&lt;n-1;i++){             string &amp;s1=words[i],&amp;s2=words[i+1];             if(s1.size()&gt;s2.size()&amp;&amp;s1.find(s2)==0){                 return false;             }             int mn=min(s1.size(),s2.size());             for(int j=0;j&lt;mn;j++){                 if(s1[j]==s2[j])continue;                 if(pos[s1[j]-'a']&gt;pos[s2[j]-'a']){                     return false;                 }                 break;             }         }         return true;    }};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 每日一题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 模拟 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客与博主</title>
       <link href="/posts/1.html"/>
       <url>/posts/1.html</url>
