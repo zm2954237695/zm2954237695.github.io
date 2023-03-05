@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: 八股文, Aurora guo 计算机">
+    <meta name="keywords" content="分类: 分布式锁, Aurora guo 计算机">
     <meta name="description" content="本科 | 计算机科学与技术">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类: 八股文 | Aurora</title>
+    <title>分类: 分布式锁 | Aurora</title>
 
     <link rel="icon" type="image/jpeg" href="https://s1.ax1x.com/2020/05/17/YR20js.jpg">
 
@@ -554,7 +554,7 @@
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #B9D1CE;">                                               
+                                  style="background-color: #518EE6;">                                               
                               <div class="notebook-skin
                                    chip-default "
                                   >博客篇                                  
@@ -571,7 +571,7 @@
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #A556E3;">                                               
+                                  style="background-color: #CE11BF;">                                               
                               <div class="notebook-skin
                                    chip-default "
                                   >前端篇                                  
@@ -588,7 +588,7 @@
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #714D6E;">                                               
+                                  style="background-color: #A28DF8;">                                               
                               <div class="notebook-skin
                                    chip-default "
                                   >算法                                  
@@ -604,10 +604,10 @@
                   <div class="moleskine-wrapper">
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
-                           chip-active "
-                                  style="background-color: #8D7DD6;">                                               
+                           chip-default "
+                                  style="background-color: #6D3C2E;">                                               
                               <div class="notebook-skin
-                                   chip-active "
+                                   chip-default "
                                   >八股文                                  
                               </div>
                           </div>
@@ -622,7 +622,7 @@
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
                            chip-default "
-                                  style="background-color: #963E14;">                                               
+                                  style="background-color: #33C0AB;">                                               
                               <div class="notebook-skin
                                    chip-default "
                                   >每日一题                                  
@@ -638,10 +638,10 @@
                   <div class="moleskine-wrapper">
                       <div class="moleskine-notebook">
                           <div class="chip notebook-cover center-align waves-effect waves-light
-                           chip-default "
-                                  style="background-color: #08E516;">                                               
+                           chip-active "
+                                  style="background-color: #41EC98;">                                               
                               <div class="notebook-skin
-                                   chip-default "
+                                   chip-active "
                                   >分布式锁                                  
                               </div>
                           </div>
@@ -773,34 +773,35 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/posts/11.html">
+                    <a href="/posts/0.html">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020832.jpg" class="responsive-img" alt="ThreadLocal">
+                            <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020502.jpg" class="responsive-img" alt="分布式锁">
                             
-                            <span class="card-title">ThreadLocal</span>
+                            <span class="card-title">分布式锁</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                什么是ThreadLocalThreadLocal变量，线程局部变量，同一个ThreadLocal所包含的对象，在不同的Thread中有不同的副本。
+                                JVM本地锁解决减库存时的超卖问题主要用于解决共享资源在服务内部时，多个请求并发访问，使用jvm提高的synchronized或者ReentrantLock来解决.
 
-每个Thread都有自己的实例副本，且该副本只能由当前Thread使用
-每个Thread
+库存stock写死的情况(没有进行数据库保存库存量)
+
+@Service
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-05
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E5%85%AB%E8%82%A1%E6%96%87/" class="post-category">
-                                    八股文
+                                <a href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/" class="post-category">
+                                    分布式锁
                                 </a>
                                 
                                 
@@ -811,151 +812,12 @@
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/redis/">
-                            <span class="chip bg-color">redis</span>
+                        <a href="/tags/Java/">
+                            <span class="chip bg-color">Java</span>
                         </a>
                         
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/10.html">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013627.jpg" class="responsive-img" alt="HashMap &amp; ConcurrentHashMap">
-                            
-                            <span class="card-title">HashMap &amp; ConcurrentHashMap</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                HashMap的结构Hashmap的底层是哈希表，而在Java中哈希表是用数组+链表实现的。每一个数组的节点称为bucket桶。但桶中有多个元素时就以链表的方式进行存储。当添加元素时，通过key的hash算法计算出hash值。然后通过has
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%85%AB%E8%82%A1%E6%96%87/" class="post-category">
-                                    八股文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/HashMap/">
-                            <span class="chip bg-color">HashMap</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/7.html">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020832.jpg" class="responsive-img" alt="终端中按下ctrl+c之后发生了什么">
-                            
-                            <span class="card-title">终端中按下ctrl+c之后发生了什么</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                终端中按下ctrl+c之后发生了什么在终端内按下ctrl+c之后，键盘产生硬件中断.
-如果系统还在执行代码，那么用户空间内代码暂停执行。切换到内核态处理硬件中断。
-把ctrl+c解释成SIGINT信号，记录在进程控制块中。
-当从内核态返回用
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%85%AB%E8%82%A1%E6%96%87/" class="post-category">
-                                    八股文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%B3%9B%E5%9E%8B/">
-                            <span class="chip bg-color">泛型</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/6.html">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928011708.jpg" class="responsive-img" alt="对泛型的一些理解">
-                            
-                            <span class="card-title">对泛型的一些理解</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                泛型泛型本质是将数据类型参数化，它通过擦除的方式实现。声明了泛型.java源代码，在编译生成.class文件之后，泛型相关的信息就消失了。可以认为，源代码中泛型的信息是提供给编译器用的，对JAVA虚拟机不可见。
-看下面的代码:
-CODEpu
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%85%AB%E8%82%A1%E6%96%87/" class="post-category">
-                                    八股文
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%B3%9B%E5%9E%8B/">
-                            <span class="chip bg-color">泛型</span>
+                        <a href="/tags/%E9%94%81/">
+                            <span class="chip bg-color">锁</span>
                         </a>
                         
                     </div>
